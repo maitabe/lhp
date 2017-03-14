@@ -1,0 +1,45 @@
+<div class="container" ng-controller="mainCtrl">
+<md-toolbar>
+    <div class="md-toolbar-tools" layout-align="space-between center">
+      <h2>Contacts</h2>
+      <md-button class="md-raised" type="button" ui-sref="addContact">Add Contact
+    </md-button>
+    </div>
+  </md-toolbar>
+<md-list>
+  <md-list-item ng-repeat="contact in contacts" class="card-contact">
+    <md-card-title>
+          <md-card-title-text>
+            <h3>{{contact.name}}</h3>
+            <p>{{contact.email}}</p>
+          </md-card-title-text>
+        </md-card-title>
+        <md-divider ></md-divider>
+  </md-list-item>
+
+  </md-list>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

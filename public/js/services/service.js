@@ -3,8 +3,6 @@ app.factory('contactList', ['$http', function($http) {
 	var contactsService = {
 
       addContact: function(newContact) {
-      //add new contact locally
-      // newContact.id = this.contacts.length + 1;
 
       //add new contact to server
       return $http.post('/addContact', newContact).then(function(inputData){
